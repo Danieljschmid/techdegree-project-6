@@ -1,0 +1,64 @@
+
+// Descriptive Colors
+$white            : #fff;
+$grey             : #878787;
+$black            : #000;
+
+
+//Functional Colors
+
+$color-prim         : #000;
+$color-sec          : #000;
+
+$color-text-light   : #000;
+$color-text-base    : #000;
+$color-text-dark    : #000;
+
+$color-border       : $color-prim;
+
+$color-link-default : $color-sec;
+
+$color-nav-active   : $color-prim;
+
+//Text
+
+$base__font-size    : 16px;
+$base__line         : 24px;
+
+//Font Stacks
+
+$font-url--google    : #000;
+$font-family--primary: #000;
+
+//Font Weights
+
+$font-weight--thin      : 100;
+$font-weight--light     : 300;
+$font-weight--medium    : 400;
+$font-weight--bold      : 700;
+$font-weight--ultra-bold: 900;
+
+//Border Radius
+
+$br                 : 5px;
+
+//Transitions
+
+$trns-duration   : .3s;
+
+//Breakpoints
+
+$breakpoint-sm      : 1px;
+$breakpoint-md      : 480px;
+$breakpoint-lg      : 1040px;
+
+//Path to assets
+
+$path--rel          : "../../images";
+
+//grid
+
+$g-col-width       : 65px;
+$g-gutter-width    : 20px;
+$g-col-count       : 12;
+$g-cont-max-w      : 1050px;

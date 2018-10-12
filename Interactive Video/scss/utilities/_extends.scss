@@ -1,0 +1,83 @@
+
+//Nav Items
+
+%nav-item-disp {
+  display: inline-block;
+  margin: 0 em(12px);
+}
+%nav-item-link {
+  font-size: em(18px);
+  font-weight: $font-weight--light;
+  padding: em(8px, 18px);
+}
+%nav-item-on {
+  color: $white;
+  background-color: $color-nav-active;
+  border-radius: $br;
+}
+
+//Headlines
+
+%hdln-prim {
+  color: $color-prim;
+  margin-top: em(0px);
+}
+%hdln-sec {
+  font-weight: $font-weight--thin;
+  margin-top: em(50px);
+  margin-bottom: em(2px);
+}
+
+//Buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Hidden
+
+%hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+//panels
+
+%panel-default {
+  padding-top: em(30px);
+  padding-bottom: em(20px);
+}
+
+%panel-padding {
+  padding-top: em(80px);
+  padding-bottom: em(34px);
+}
+
+//grid
+
+%grid-system {
+  margin-top: em(5px);
+  margin-bottom: em(5px);
+  padding: em(14px);
+  border-radius: $br;
+}

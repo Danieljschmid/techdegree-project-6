@@ -1,0 +1,31 @@
+//==========
+//Grid Columns
+//==========
+
+%col {
+  float: left;
+  padding: 0 10px;
+  margin-left: 2%;
+}
+
+//calculate grid columns
+
+@for $i from 1 through $g-col-count {
+
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+  //Generate colimn modifier classes
+  @include mq(medium){
+  .grid__col--#{$i} {
+    width: percentage($target / $context);
+    }
+  }
+}
+
+//column styles
+
+[class^="grid__col--"] {
+  @include mq(medium);
+  margin-top: em(12px);
+  margin-bottom: em(12px);
+}

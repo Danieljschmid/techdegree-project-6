@@ -1,0 +1,40 @@
+//======
+//Base Styles
+//======
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-size: $base__font-size;
+  line-height: ($base__line / $base__font-size);
+  font-family: $font-family--primary;
+  padding: em(40px);
+  margin: 0 auto;
+
+}
+
+
+
+.nav__item a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+p {
+  font-weight: $font-weight--medium;
+  font-size: em(18px);
+  line-height: (27px / 18px);
+  margin: 0 0 em(30px, 18px);
+}
+
+//lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,86 @@
+
+//Mixins
+
+
+//Bem Selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+//media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  @else if $break =="medium" {
+    @media (min-width: $breakpoint-md + 1) {
+      @content;
+    }
+  }
+  @else if $break =="large" {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "whoops no value could be retrieved for '#{$break}'." ;
+  }
+}
+
+//flex box
+
+@mixin grid-row {
+  max-width: $breakpoint-lg;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @for $i from 1 through $g-col-count{
+
+    .grid__col--#{$i} {
+      width: (percentage($i / $g-col-count) - 4%);
+      margin: 0 (4% / 2);
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.grid__row {
+  margin: em(38px) 0;
+
+  @include mq(medium) {
+    @include grid-row;
+  }
+  @include mq(large) {
+        max-width: 1400px;
+        margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
