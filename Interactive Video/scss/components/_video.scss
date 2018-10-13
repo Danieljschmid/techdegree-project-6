@@ -1,0 +1,21 @@
+//layout
+
+.video, {
+      width:100%;
+      margin:0 auto;
+      @include mq(medium)  {
+        width: 75%;
+        margin-top: 20px;
+        max-width: 1080px;
+      }
+}
+
+.text {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 25px;
+  @include mq(medium)  {
+    width: 75%;
+    max-width: 1080px;
+  }
+}

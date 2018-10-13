@@ -41,46 +41,46 @@
 
 //flex box
 
-@mixin grid-row {
-  max-width: $breakpoint-lg;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-
-  @for $i from 1 through $g-col-count{
-
-    .grid__col--#{$i} {
-      width: (percentage($i / $g-col-count) - 4%);
-      margin: 0 (4% / 2);
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
-.grid__row {
-  margin: em(38px) 0;
-
-  @include mq(medium) {
-    @include grid-row;
-  }
-  @include mq(large) {
-        max-width: 1400px;
-        margin: auto;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+// @mixin grid-row {
+//   max-width: $breakpoint-lg;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: nowrap;
+//   align-items: center;
 //
+//   // @for $i from 1 through $g-col-count{
+//   //
+//   //   .grid__col--#{$i} {
+//   //     width: (percentage($i / $g-col-count) - 4%);
+//   //     margin: 0 (4% / 2);
+//   //     display: flex;
+//   //     justify-content: center;
+//     }
+//   }
+// }
+//
+// .grid__row {
+//   margin: em(38px) 0;
+//
+//   @include mq(medium) {
+//     @include grid-row;
+//   }
+//   @include mq(large) {
+//         max-width: 1400px;
+//         margin: auto;
+//   }
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// //
