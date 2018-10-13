@@ -304,7 +304,7 @@ template {
 .video {
   width: 100%;
   margin: 0 auto; }
-  @media (min-width: 481px) {
+  @media (min-width: 769px) {
     .video {
       width: 75%;
       margin-top: 20px;
@@ -314,7 +314,7 @@ template {
   width: 85%;
   margin: 0 auto;
   padding-top: 25px; }
-  @media (min-width: 481px) {
+  @media (min-width: 769px) {
     .text {
       width: 75%;
       max-width: 1080px; } }
