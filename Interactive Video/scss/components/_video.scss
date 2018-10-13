@@ -10,6 +10,14 @@
       }
 }
 
+.mejs__controls:not([style*='display: none']) {
+  background: linear-gradient(to right, black , orange);
+}
+
+span {
+  cursor: pointer;
+}
+
 .text {
   width: 85%;
   margin: 0 auto;
